@@ -5,6 +5,7 @@ import pydeck as pdk
 #LOADING DATA
 DATA_URL = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples/3d-heatmap/heatmap-data.csv"
 
+@st.cache
 def load_data():
     """Choose here your data format"""
     #data = pd.read_csv(DATA_URL).dropna() ## super slow if used
