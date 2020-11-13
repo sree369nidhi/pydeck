@@ -7,11 +7,10 @@ DATA_URL = "https://raw.githubusercontent.com/visgl/deck.gl-data/master/examples
 
 def load_data():
     """Choose here your data format"""
-    #data = pd.read_csv(DATA_URL).dropna() ## super slow if used
-    # data.to_csv('./data.csv',index=False)
-    data = pd.read_csv('heatmap-data.csv') ## super slow if used
-    # data = data.to_dict('records') ## super slow if used
-
+    data = pd.read_csv(DATA_URL).dropna() ## super slow if used
+    #data.to_csv('./data.csv',index=False)
+    #data = pd.read_csv('heatmap-data.csv') ## super slow if used
+    #data = data.to_dict('records') ## super slow if used
     return data
 
 # LAYER 
